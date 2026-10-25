@@ -88,7 +88,7 @@ h1,h2{font-family:"Playfair Display",serif;font-weight:500}
 .field{margin:24px 0}.field label.field-label{display:block;font-size:12px;margin-bottom:10px;color:#e4eaf2}
 .field input[type=text]{width:100%;min-height:50px;padding:14px 15px;background:#ffffff09;border:1px solid #ffffff30;color:white;font:inherit;font-size:14px;border-radius:3px;outline:none;transition:border .25s,background .25s}
 .field input[type=text]::placeholder{color:#8f9eb4}.field input[type=text]:focus{border-color:var(--gold);background:#ffffff0d}
-.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .choice{display:flex;align-items:flex-start;gap:10px;padding:15px;border:1px solid #ffffff2b;cursor:pointer;font-size:13px;line-height:1.6;color:#e3e9f2;min-width:0;transition:border .2s,background .2s}
 .choice:has(input:checked){border-color:var(--gold);background:#f3c87512}
 .choice input{accent-color:var(--gold);margin-top:4px;flex:0 0 auto}
@@ -179,7 +179,7 @@ body.letter-opened .hero-copy{opacity:0;pointer-events:none}
   <div class="kicker">One year · One journey · Many sparks</div>
   <h2>Một hành trình được viết nên từ những tia lửa đam mê.</h2>
   <p class="lead" style="text-align: justify">Một năm không chỉ được đếm bằng thời gian, mà còn bằng những dấu ấn đã cùng nhau tạo nên, những người đồng hành đã gặp gỡ và những khoảnh khắc khiến ngọn lửa đam mê tiếp tục rực sáng.</p>
-  <div class="poster-frame"><img src="assets/tapthe.JPG" alt="Khoảnh khắc tập thể HUSC Event Hub" loading="lazy"></div>
+  <div class="poster-frame"><img src="assets/tapthe.JPEG" alt="Khoảnh khắc tập thể HUSC Event Hub" loading="lazy"></div>
  </div>
 </section>
 <section>
@@ -227,9 +227,12 @@ body.letter-opened .hero-copy{opacity:0;pointer-events:none}
   <p>Thông tin này sẽ được ghi nhận vào danh sách xác nhận tham gia của chương trình.</p>
   <div class="field"><label class="field-label" for="unit">Tên đơn vị (CLB / Đội / Nhóm / Khách mời) *</label><input id="unit" name="unit" type="text" placeholder="Nhập tên đơn vị của bạn" required maxlength="150" autocomplete="organization"></div>
   <div class="field"><span class="field-label">Xác nhận tham gia *</span><div class="choices">
-   <label class="choice"><input type="radio" name="attendance" value="Tham gia" required><span>Có, chúng mình sẽ tham gia</span></label>
+   <label class="choice"><input type="radio" name="attendance" value="Tham gia all" required><span>Sẽ tham gia phần Lễ và Hội</span></label>
+   <label class="choice"><input type="radio" name="attendance" value="Tham gia nửa" required><span>Chỉ tham gia phần Lễ</span></label>
    <label class="choice"><input type="radio" name="attendance" value="Không tham gia"><span>Hẹn Nhà Ven dịp khác</span></label>
   </div></div>
+  <div class="field"><label class="field-label" for="unit">Số lượng tham gia của Quý đơn vị *</label><input id="unit" name="unit" type="text" placeholder="Nhập số lượng (Ví dụ: 1)" required maxlength="150" autocomplete="organization"></div>
+
   <button class="submit" type="submit" id="submitBtn">Gửi xác nhận <span aria-hidden="true">↗</span></button>
   <div class="status" id="status" role="status" aria-live="polite"></div>
   <p class="privacy">Thông tin được sử dụng để phục vụ công tác xác nhận và đón tiếp khách mời của chương trình.</p>
