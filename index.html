@@ -228,11 +228,10 @@ body.letter-opened .hero-copy{opacity:0;pointer-events:none}
   <div class="field"><label class="field-label" for="unit">Tên đơn vị (CLB / Đội / Nhóm / Khách mời) *</label><input id="unit" name="unit" type="text" placeholder="Nhập tên đơn vị của bạn" required maxlength="150" autocomplete="organization"></div>
   <div class="field"><span class="field-label">Xác nhận tham gia *</span><div class="choices">
    <label class="choice"><input type="radio" name="attendance" value="Tham gia all" required><span>Sẽ tham gia phần Lễ và Hội</span></label>
-   <label class="choice"><input type="radio" name="attendance" value="Tham gia nửa" required><span>Chỉ tham gia phần Lễ</span></label>
+   <label class="choice"><input type="radio" name="attendance" value="Tham gia half" required><span>Chỉ tham gia phần Lễ</span></label>
    <label class="choice"><input type="radio" name="attendance" value="Không tham gia"><span>Hẹn Nhà Ven dịp khác</span></label>
   </div></div>
-  <div class="field"><label class="field-label" for="unit">Số lượng tham gia của Quý đơn vị *</label><input id="unit" name="unit" type="text" placeholder="Nhập số lượng (Ví dụ: 1)" required maxlength="150" autocomplete="organization"></div>
-
+  <div class="field"><label class="field-label" for="unit">Số lượng tham gia của Quý đơn vị *</label><input id="unit" name="unit" type="text" placeholder="Nhập số lượng (Ví dụ: 1)" required maxlength="150" autocomplete="quantity"></div>
   <button class="submit" type="submit" id="submitBtn">Gửi xác nhận <span aria-hidden="true">↗</span></button>
   <div class="status" id="status" role="status" aria-live="polite"></div>
   <p class="privacy">Thông tin được sử dụng để phục vụ công tác xác nhận và đón tiếp khách mời của chương trình.</p>
