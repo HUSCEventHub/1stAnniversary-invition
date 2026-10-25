@@ -35,7 +35,7 @@ img{max-width:100%}button,input{font:inherit}a{color:inherit}
 .envelope{position:absolute;inset:clamp(42px,6vw,60px) 0 0;height:calc(100% - clamp(42px,6vw,60px));background:linear-gradient(135deg,#f9e8bf,#dfbd7b);border-radius:5px;overflow:visible}
 .envelope-back{position:absolute;inset:0;background:#e8c986;border-radius:5px}
 .letter{position:absolute;left:7%;width:86%;height:86%;bottom:7%;background:var(--cream);color:var(--navy);padding:16px 12px;text-align:center;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:transform 1.05s cubic-bezier(.2,.8,.2,1),opacity .6s;z-index:2;border:1px solid #e4c47e}
-.letter img{width:clamp(42px,5vw,64px);height:clamp(42px,5vw,64px);object-fit:contain;margin-bottom:7px}
+.letter img{width:clamp(60px,7vw,88px);height:clamp(60px,7vw,88px);object-fit:contain;margin-bottom:9px;flex:0 0 auto}
 .letter b{font-family:"Playfair Display",serif;font-size:clamp(20px,3.5vw,28px);font-weight:600}
 .letter small{font-size:clamp(8px,1vw,10px);letter-spacing:.15em;margin-top:8px}
 .flap{position:absolute;top:0;left:0;width:100%;height:57%;transform-origin:top;transform:rotateX(0);transition:transform 1s cubic-bezier(.2,.75,.2,1);z-index:4;backface-visibility:visible}
@@ -125,6 +125,7 @@ body.letter-opened .hero-copy{opacity:0;pointer-events:none}
   .card-section{border-radius:14px}
 }
 @media(max-width:420px){
+  .letter img{width:66px;height:66px}
   .topbar{padding:13px 17px}
   .brand img{width:46px;height:46px}
   .hero{padding-left:14px;padding-right:14px}
@@ -217,7 +218,7 @@ body.letter-opened .hero-copy{opacity:0;pointer-events:none}
 </section>
 <section class="form-section" id="confirm">
  <div class="section-inner reveal" style="text-align:center">
-  <div class="kicker"></div><h2 style="font-size:clamp(35px,5vw,58px);margin:16px 0">Bạn sẽ đến chứ?</h2>
+  <div class="kicker">Kindly RSVP</div><h2 style="font-size:clamp(35px,5vw,58px);margin:16px 0">Bạn sẽ đến chứ?</h2>
   <p class="form-intro">Vui lòng xác nhận thông tin bên dưới để Nhà Ven chuẩn bị đón tiếp chu đáo nhất nhé.</p>
  </div>
  <form class="form-card reveal" id="rsvpForm">
